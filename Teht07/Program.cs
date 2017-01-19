@@ -17,7 +17,7 @@ namespace Teht07
             {
                 Console.WriteLine("Year {0} is a leap year!", year);
             }
-            else if (year % 4 == 0 && year / 100 != 0)
+            else if (year % 4 == 0 && year % 100 != 0)
             {
                 Console.WriteLine("That is correct, year {0} is leap year", year);
             }
