@@ -10,11 +10,26 @@ namespace Teht08
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Give me three numbers, press enter fater every number, and I show the biggest");
-            int j = int.Parse(Console.ReadLine());
-            int k = int.Parse(Console.ReadLine());
-            int l = int.Parse(Console.ReadLine());
+            Console.WriteLine("I figure out the biggest number!\nPress enter after every number.");
+            Console.WriteLine("Give me number one ->");
+            int one = int.Parse(Console.ReadLine());
+            Console.WriteLine("And number two ->");
+            int two = int.Parse(Console.ReadLine());
+            Console.WriteLine("And number three ->");
+            int three = int.Parse(Console.ReadLine());
 
+            if (one < two && one < three)
+            {
+                if (two > one && two > three)
+                {
+                    Console.WriteLine("The number {0} is biggest", two);
+                }
+                else if (three > one && three > two)
+                {
+                    Console.WriteLine("The number {0} is biggest", three);
+                }
+            }
+            else Console.WriteLine("Number {0} is biggest", one);
         }
     }
 }
